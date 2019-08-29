@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1566938065 source:c:\users\aluno\desktop\test1\main.cpp
+	<iostream>
+	"./include/Pet.h"
+
+1566937451 source:c:\users\aluno\desktop\test1\src\main.cpp
+	<iostream>
+	"Pet.h"
+
+1566938171 c:\users\aluno\desktop\test1\include\pet.h
+	<iostream>
+
+1567092546 source:c:\users\alvaro\documents\test1\test1\main.cpp
+	<iostream>
+	"./include/Pet.h"
+	<time.h>
+
+1567092880 c:\users\alvaro\documents\test1\test1\include\pet.h
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1567092532 source:c:\users\alvaro\documents\test1\test1\src\pet.cpp
+	"../include/Pet.h"
+
