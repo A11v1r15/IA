@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1567111264 source:c:\users\aluno\desktop\ia\test2\main.cpp
+	<iostream>
+	"Item.h"
+	"Inventory.h"
+
+1567108170 c:\users\aluno\desktop\ia\test2\include\item.h
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
+1567111600 source:c:\users\aluno\desktop\ia\test2\src\item.cpp
+	"Item.h"
+
+1567111541 source:c:\users\aluno\desktop\ia\test2\src\inventory.cpp
+	"Inventory.h"
+
+1567110176 c:\users\aluno\desktop\ia\test2\include\inventory.h
+	<stack>
+	"Item.h"
+

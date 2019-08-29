@@ -55,7 +55,7 @@ void Cat::entreter(){
     if (tedio < 0){
         tedio = 0;
     }
-    cout << "Yay, uhull !!" << endl;
+    cout << "Yay" << endl;
 }
 
 void Dog::alimentar(){
@@ -63,5 +63,5 @@ void Dog::alimentar(){
     if (fome < 0){
         fome = 0;
     }
-    cout << "Chomp, chomp, chomp" << endl;
+    cout << "Chomp" << endl;
 }
