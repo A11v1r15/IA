@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1446667744 source:c:\users\aluno\desktop\ia\test3\main.cpp
+	<iostream>
+
+1567716213 source:c:\users\aluno\desktop\ia\test3\src\agent.cpp
+	"Agent.h"
+
+1567716415 c:\users\aluno\desktop\ia\test3\include\agent.h
+	<algorithm>
+	"State.h"
+
+1567713715 source:c:\users\aluno\desktop\ia\test3\src\state_1.cpp
+	"State_1.h"
+
+1567712180 c:\users\aluno\desktop\ia\test3\include\state_1.h
+	<State.h>
+
+1567715916 c:\users\aluno\desktop\ia\test3\include\state.h
+	<iostream>
+	<algorithm>
+	"Agent.h"
+
+1567713715 source:c:\users\aluno\desktop\ia\test3\src\state_2.cpp
+	"State_2.h"
+
+1567712180 c:\users\aluno\desktop\ia\test3\include\state_2.h
+	<State.h>
+
+1567713715 source:c:\users\aluno\desktop\ia\test3\src\state_3.cpp
+	"State_3.h"
+
+1567712180 c:\users\aluno\desktop\ia\test3\include\state_3.h
+	<State.h>
+
+1567717101 source:c:\users\aluno\desktop\ia\test3\src\battling.cpp
+	"Battling.h"
+
+1567716809 c:\users\aluno\desktop\ia\test3\include\battling.h
+	<State.h>
+
+1567717098 source:c:\users\aluno\desktop\ia\test3\src\hunting.cpp
+	"Hunting.h"
+
+1567716808 c:\users\aluno\desktop\ia\test3\include\hunting.h
+	<State.h>
+
+1567715846 source:c:\users\aluno\desktop\ia\test3\src\sleeping.cpp
+	"Sleeping.h"
+
+1567714220 c:\users\aluno\desktop\ia\test3\include\sleeping.h
+	<State.h>
+
+1567714754 source:c:\users\aluno\desktop\ia\test3\src\troll.cpp
+	"Troll.h"
+
+1567714715 c:\users\aluno\desktop\ia\test3\include\troll.h
+	<Agent.h>
+
