@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1568142799 source:c:\users\user\documents\codeblocks\statemachine\main.cpp
+	<iostream>
+	"StateSleep.h"
+	"Troll.h"
+
+1568135598 source:c:\users\user\documents\codeblocks\statemachine\src\troll.cpp
+	"Troll.h"
+
+1568142831 c:\users\user\documents\codeblocks\statemachine\include\troll.h
+	"State.h"
+
+1568136250 c:\users\user\documents\codeblocks\statemachine\include\state.h
+	<iostream>
+
+1568136230 source:c:\users\user\documents\codeblocks\statemachine\src\statesleep.cpp
+	"StateSleep.h"
+
+1568136184 c:\users\user\documents\codeblocks\statemachine\include\statesleep.h
+	"State.h"
+
+1568148625 source:c:\users\aluno\desktop\ia - a11v1r15\statemachine\main.cpp
+	<iostream>
+	"StateSleep.h"
+	"StateEating.h"
+	"Troll.h"
+
+1568149347 c:\users\aluno\desktop\ia - a11v1r15\statemachine\include\statesleep.h
+	"State.h"
+	"Troll.h"
+
+1568148855 c:\users\aluno\desktop\ia - a11v1r15\statemachine\include\state.h
+	<iostream>
+
+1568149397 c:\users\aluno\desktop\ia - a11v1r15\statemachine\include\stateeating.h
+	"State.h"
+	"Troll.h"
+
+1568148528 c:\users\aluno\desktop\ia - a11v1r15\statemachine\include\troll.h
+	"State.h"
+
+1568149216 source:c:\users\aluno\desktop\ia - a11v1r15\statemachine\src\stateeating.cpp
+	"StateEating.h"
+
+1568149139 source:c:\users\aluno\desktop\ia - a11v1r15\statemachine\src\statesleep.cpp
+	"StateSleep.h"
+
+1568148766 source:c:\users\aluno\desktop\ia - a11v1r15\statemachine\src\troll.cpp
+	"Troll.h"
+

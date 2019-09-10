@@ -1,0 +1,1 @@
+Todos os estados herdam de uma classe "State" e tem a função principal, o que se deve fazer ao entrar no estado e o que deve fazer ao sair do estado. O agente "troll" ao mudar de estado através da função "ChangeState" chama a função de saída de seu estado atual, troca de estado e então chama a função de entrada de seu novo estado.
