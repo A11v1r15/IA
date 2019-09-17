@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1568747736 source:c:\users\aluno\desktop\ia - a11v1r15\bt\main.cpp
+	<iostream>
+	"./include/Node.h"
+	"./include/Composites/Sequence.h"
+	"./include/Composites/Selector.h"
+	"./include/Decorators/Root.h"
+	"./include/World.h"
+	"./include/CheckIfDoorIsOpen.h"
+
+1568741303 c:\users\aluno\desktop\ia - a11v1r15\bt\include\node.h
+	<iostream>
+	<list>
+
+1568741516 c:\users\aluno\desktop\ia - a11v1r15\bt\include\composites\sequence.h
+	"CompositeNode.h"
+
+1568742366 c:\users\aluno\desktop\ia - a11v1r15\bt\include\composites\compositenode.h
+	"../Node.h"
+
+1568742370 c:\users\aluno\desktop\ia - a11v1r15\bt\include\composites\selector.h
+	"CompositeNode.h"
+
+1568743327 c:\users\aluno\desktop\ia - a11v1r15\bt\include\decorators\root.h
+	"DecoratorNode.h"
+
+1568743405 c:\users\aluno\desktop\ia - a11v1r15\bt\include\decorators\decoratornode.h
+	"../Node.h"
+
+1568747253 c:\users\aluno\desktop\ia - a11v1r15\bt\include\world.h
+
+1568747460 c:\users\aluno\desktop\ia - a11v1r15\bt\include\checkifdoorisopen.h
+	"World.h"
+	"Node.h"
+
