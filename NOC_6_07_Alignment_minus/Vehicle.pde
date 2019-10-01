@@ -18,7 +18,7 @@ class Vehicle {
   // Constructor initialize all values
   Vehicle(float x, float y, boolean t) {
     position = new PVector(x, y);
-    r = 12;
+    r = 6;
     maxspeed = random(1, 3);
     maxforce = 0.05;
     acceleration = new PVector(0, 0);
@@ -31,9 +31,39 @@ class Vehicle {
     acceleration.add(force);
   }
 
+
+  PVector align (ArrayList<Vehicle> vehicles) {
+    PVector sum = new PVector();
+    int count = 0;
+    // For every boid in the system, check if it's too close
+    for (Vehicle other : vehicles) {
+      if (this.type != other.type) {
+        continue;
+      }
+      float d = PVector.dist(position, other.position);
+      // If the distance is greater than 0 and less than an arbitrary amount (0 when you are yourself)
+      if (d > 0) {
+        sum.add(other.velocity);
+        count++;            // Keep track of how many
+      }
+    }
+    // Average -- divide by how many
+    if (count > 0) {
+      // Our desired vector is moving away maximum speed
+      sum.div(count);
+      sum.setMag(maxspeed);
+      // Implement Reynolds: Steering = Desired - Velocity
+      PVector steer = PVector.sub(sum, velocity);
+      steer.limit(maxforce);
+      return (steer);
+    } else {
+      return new PVector (0, 0);
+    }
+  }
+
   // Separation
   // Method checks for nearby vehicles and steers
-  void align (ArrayList<Vehicle> vehicles) {
+  PVector separate (ArrayList<Vehicle> vehicles) {
     PVector sum = new PVector();
     int count = 0;
     // For every boid in the system, check if it's too close
@@ -56,11 +86,63 @@ class Vehicle {
       // Implement Reynolds: Steering = Desired - Velocity
       PVector steer = PVector.sub(sum, velocity);
       steer.limit(maxforce);
-      applyForce(steer);
+      return (steer);
+    } else {
+      return new PVector (0, 0);
     }
   }
 
+  PVector cohere (ArrayList<Vehicle> vehicles) {
+    PVector sum = new PVector();
+    int count = 0;
+    // For every boid in the system, check if it's too close
+    for (Vehicle other : vehicles) {
+      if (this.type != other.type) {
+        continue;
+      }
+      float d = PVector.dist(position, other.position);
+      // If the distance is greater than 0 and less than an arbitrary amount (0 when you are yourself)
+      if (d > 0 && d < 50) {
+        sum.add(other.position);
+        count++;            // Keep track of how many
+      }
+    }
+    // Average -- divide by how many
+    if (count > 0) {
+      // Our desired vector is moving away maximum speed
+      sum.div(count);
 
+      PVector desired = PVector.sub(sum, this.position);
+      desired.setMag(maxspeed);
+
+      // Implement Reynolds: Steering = Desired - Velocity
+      PVector steer = PVector.sub(desired, velocity);
+      steer.limit(maxforce);
+      return (steer);
+    } else {
+      return new PVector (0, 0);
+    }
+  }
+
+  PVector seek (PVector target) {
+    PVector desired = PVector.sub(target, this.position);
+    desired.setMag(maxspeed);
+
+    // Implement Reynolds: Steering = Desired - Velocity
+    PVector steer = PVector.sub(desired, velocity);
+    steer.limit(maxforce);
+    return (steer);
+  }
+
+  void flock(ArrayList<Vehicle> vehicles, PVector target) {
+    PVector steer = new PVector();
+    steer.add(this.align(vehicles));
+    steer.add(this.cohere(vehicles));
+    steer.add(this.separate(vehicles));
+    steer.add(this.seek(target));
+    steer.limit(maxspeed);
+    applyForce(steer);
+  }
 
   // Method to update position
   void update() {
@@ -74,11 +156,20 @@ class Vehicle {
   }
 
   void display() {
-    fill(255, type ? 0 : 255, 255);
+    // Draw a triangle rotated in the direction of velocity
+    float theta = velocity.heading() + PI/2;
+    fill(frameCount%256, type ? 0 : 255, 255);
     noStroke();
+    strokeWeight(1);
     pushMatrix();
     translate(position.x, position.y);
-    ellipse(0, 0, r, r);
+    rotate(theta);
+    beginShape();
+    vertex(0, -r*2);
+    vertex(-r, r*2);
+    vertex(0, r/2);
+    vertex(r, r*2);
+    endShape(CLOSE);
     popMatrix();
   }
 
