@@ -9,7 +9,7 @@
 ArrayList<Vehicle> vehicles;
 
 void setup() {
-  size(640, 360);
+  size(840, 860);
   colorMode(HSB);
   // We are now making random vehicles and storing them in an ArrayList
   vehicles = new ArrayList<Vehicle>();

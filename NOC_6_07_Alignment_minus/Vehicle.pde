@@ -23,7 +23,7 @@ class Vehicle {
     maxforce = 0.05;
     acceleration = new PVector(0, 0);
     velocity = new PVector(random(-1, 1), random(-1, 1));
-    type = t;
+    type = false;//t;
   }
 
   void applyForce(PVector force) {
