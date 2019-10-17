@@ -1,0 +1,205 @@
+# depslib dependency file v1.0
+1571336241 source:c:\users\user\documents\codeblocks\fuzzytest\main.cpp
+	<iostream>
+	"./include/FuzzyModule.h"
+
+1571160002 source:c:\users\user\documents\codeblocks\fuzzytest\src\fuzzymodule.cpp
+	<stdarg.h>
+	<iostream>
+	<cassert>
+	"../include/FuzzyModule.h"
+
+1571335455 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzymodule.h
+	<vector>
+	<string>
+	<map>
+	<iosfwd>
+	"FuzzySet.h"
+	"FuzzyVariable.h"
+	"FuzzyRule.h"
+	"FuzzyOperators.h"
+	"FzSet.h"
+
+1089924592 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyset.h
+	<string>
+	<cassert>
+
+1087089270 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyvariable.h
+	<map>
+	<iosfwd>
+	<string>
+
+1571159202 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyrule.h
+	<vector>
+	"FuzzySet.h"
+	"FuzzyOperators.h"
+	"misc/utils.h"
+
+1087089268 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyoperators.h
+	<vector>
+	<cassert>
+	"misc/utils.h"
+	"FuzzyTerm.h"
+
+1571159652 c:\users\user\documents\codeblocks\fuzzytest\include\misc\utils.h
+	<math.h>
+	<sstream>
+	<string>
+	<vector>
+	<limits>
+	<cassert>
+	<iomanip>
+	<iostream>
+
+1087089270 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyterm.h
+
+1087089270 c:\users\user\documents\codeblocks\fuzzytest\include\fzset.h
+	"FuzzyTerm.h"
+	"FuzzySet.h"
+
+1087089268 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyhedges.h
+	"FuzzySet.h"
+	"FuzzyTerm.h"
+	<math.h>
+
+1571335644 source:c:\users\user\documents\codeblocks\fuzzytest\src\fuzzyoperators.cpp
+	"../include/FuzzyOperators.h"
+
+1571335675 source:c:\users\user\documents\codeblocks\fuzzytest\src\fuzzyset_leftshoulder.cpp
+	"../include/FuzzySet_LeftShoulder.h"
+	<cassert>
+
+1571159337 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyset_leftshoulder.h
+	"FuzzySet.h"
+	"misc/utils.h"
+
+1571335681 source:c:\users\user\documents\codeblocks\fuzzytest\src\fuzzyset_rightshoulder.cpp
+	"../include/FuzzySet_RightShoulder.h"
+	<cassert>
+
+1571159664 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyset_rightshoulder.h
+	"FuzzySet.h"
+	"misc/utils.h"
+
+1087089270 source:c:\users\user\documents\codeblocks\fuzzytest\src\fuzzyset_singleton.cpp
+	"FuzzySet_Singleton.h"
+
+1571159672 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyset_singleton.h
+	"FuzzySet.h"
+	"misc/utils.h"
+
+1571335688 source:c:\users\user\documents\codeblocks\fuzzytest\src\fuzzyset_triangle.cpp
+	"../include/FuzzySet_Triangle.h"
+
+1571159681 c:\users\user\documents\codeblocks\fuzzytest\include\fuzzyset_triangle.h
+	"FuzzySet.h"
+	"misc/utils.h"
+
+1571335754 source:c:\users\user\documents\codeblocks\fuzzytest\src\fuzzyvariable.cpp
+	"../include/fuzzyvariable.h"
+	"../include/fuzzyoperators.h"
+	"../include/FuzzySet_triangle.h"
+	"../include/FuzzySet_LeftShoulder.h"
+	"../include/FuzzySet_RightShoulder.h"
+	"../include/FzSet.h"
+	"../include/misc/utils.h"
+	<cassert>
+	<iostream>
+	<algorithm>
+
+1571336241 source:c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\main.cpp
+	<iostream>
+	"./include/FuzzyModule.h"
+
+1571335455 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzymodule.h
+	<vector>
+	<string>
+	<map>
+	<iosfwd>
+	"FuzzySet.h"
+	"FuzzyVariable.h"
+	"FuzzyRule.h"
+	"FuzzyOperators.h"
+	"FzSet.h"
+
+1089924592 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyset.h
+	<string>
+	<cassert>
+
+1087089270 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyvariable.h
+	<map>
+	<iosfwd>
+	<string>
+
+1571159202 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyrule.h
+	<vector>
+	"FuzzySet.h"
+	"FuzzyOperators.h"
+	"misc/utils.h"
+
+1087089268 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyoperators.h
+	<vector>
+	<cassert>
+	"misc/utils.h"
+	"FuzzyTerm.h"
+
+1571341581 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\misc\utils.h
+	<math.h>
+	<sstream>
+	<string>
+	<vector>
+	<limits>
+	<cassert>
+	<iomanip>
+	<iostream>
+
+1087089270 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyterm.h
+
+1087089270 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fzset.h
+	"FuzzyTerm.h"
+	"FuzzySet.h"
+
+1571160002 source:c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\src\fuzzymodule.cpp
+	<stdarg.h>
+	<iostream>
+	<cassert>
+	"../include/FuzzyModule.h"
+
+1571335644 source:c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\src\fuzzyoperators.cpp
+	"../include/FuzzyOperators.h"
+
+1571335675 source:c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\src\fuzzyset_leftshoulder.cpp
+	"../include/FuzzySet_LeftShoulder.h"
+	<cassert>
+
+1571159337 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyset_leftshoulder.h
+	"FuzzySet.h"
+	"misc/utils.h"
+
+1571335681 source:c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\src\fuzzyset_rightshoulder.cpp
+	"../include/FuzzySet_RightShoulder.h"
+	<cassert>
+
+1571159664 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyset_rightshoulder.h
+	"FuzzySet.h"
+	"misc/utils.h"
+
+1571335688 source:c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\src\fuzzyset_triangle.cpp
+	"../include/FuzzySet_Triangle.h"
+
+1571159681 c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\include\fuzzyset_triangle.h
+	"FuzzySet.h"
+	"misc/utils.h"
+
+1571335754 source:c:\users\aluno\desktop\ia - a11v1r15\fuzzytest\src\fuzzyvariable.cpp
+	"../include/fuzzyvariable.h"
+	"../include/fuzzyoperators.h"
+	"../include/FuzzySet_triangle.h"
+	"../include/FuzzySet_LeftShoulder.h"
+	"../include/FuzzySet_RightShoulder.h"
+	"../include/FzSet.h"
+	"../include/misc/utils.h"
+	<cassert>
+	<iostream>
+	<algorithm>
+
